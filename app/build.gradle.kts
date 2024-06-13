@@ -62,4 +62,8 @@ dependencies {
     //Glide
     implementation("com.github.bumptech.glide:glide:4.11.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.11.0")
+
+    // shimmer effect
+    implementation ("com.facebook.shimmer:shimmer:0.5.0")
+
 }

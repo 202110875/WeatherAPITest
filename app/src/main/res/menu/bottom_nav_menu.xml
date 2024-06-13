@@ -6,16 +6,16 @@
         android:id="@+id/homeFragment"
         app:showAsAction="always"
         android:enabled="true"
-        android:title="홈"
+        android:title="API"
         tools:ignore="AlwaysShowAction" />
     <item
         android:id="@+id/lookFragment"
         app:showAsAction="always"
-        android:title="둘러보기" />
+        android:title="TIMER" />
     <item
         android:id="@+id/searchFragment"
         app:showAsAction="always"
-        android:title="검색" />
+        android:title="STOPWATCH" />
     <item
         android:id="@+id/lockerFragment"
         app:showAsAction="always"

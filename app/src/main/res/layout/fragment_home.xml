@@ -9,7 +9,7 @@
         android:id="@+id/home_dust_info_rv"
         android:layout_width="match_parent"
         android:layout_height="600dp"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -17,6 +17,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.496"
-        tools:listitem="@layout/item_home" />
+        tools:listitem="@layout/item_dust" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496"
+        app:shimmer_duration="1000"
+        app:shimmer_auto_start="true">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <include layout="@layout/item_dust_skeleton"/>
+            <include layout="@layout/item_dust_skeleton"/>
+            <include layout="@layout/item_dust_skeleton"/>
+            <include layout="@layout/item_dust_skeleton"/>
+            <include layout="@layout/item_dust_skeleton"/>
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
